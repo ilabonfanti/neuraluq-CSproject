@@ -8,7 +8,6 @@ import numpy as np
 import scipy.io as sio
 import matplotlib.pyplot as plt
 
-
 def load_data():
     data = sio.loadmat("../dataset/KO_train.mat")
     t_test, u_test = data["t_test"], data["u_test"]
