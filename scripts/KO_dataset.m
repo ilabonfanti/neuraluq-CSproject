@@ -7,7 +7,7 @@ b = 1;
 
 %time interval and initial conditions
 t_interval = [0 10];
-init_cond = [1.1;  1;  0.5];
+init_cond = [1.01;  1;  0.5];
 f = @(t,y) [y(2)*y(3); y(1)*y(3); -2*y(1)*y(2)];
 %solution
 [t,y] = ode45(f, t_interval, init_cond);
